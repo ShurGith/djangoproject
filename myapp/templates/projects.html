@@ -1,0 +1,18 @@
+{% extends 'layouts/main_layout.html' %}
+
+
+{% block content %}
+
+{% load static %}
+<h1>Projects</h1>
+
+{% for project in projects %}
+<article class="card">
+    <a href="{% url 'project_detail' project.id %}">
+        <h3>{{project.name}}</h3>
+    </a>
+</article>
+{% endfor %}
+
+
+{% endblock %}

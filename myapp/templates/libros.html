@@ -1,0 +1,26 @@
+{% extends 'layouts/main_layout.html' %}
+
+
+{% block content %}
+
+{% load static %}
+
+<img src="{% static 'fazt.png' %}" alt="" width="70">
+<h1>Libros</h1>
+<div class="card">
+{% for libro in libros %}
+
+
+    <div class="libro">
+        <div class="titulo">
+            <img src="{{libro.portada}}">
+            <p class="nombre">{{libro.titulo}}</p>
+            <p class="autor"><span class="autor-span">Autor:</span> {{libro.autor.nombre}} {{libro.autor.apellidos}}</p>
+            <p class="precio">{{libro.precio}}€</p>
+        </div>
+        <p>{{libro.extracto}}</p>
+        <h4>{{libro.isbn}}</h4>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

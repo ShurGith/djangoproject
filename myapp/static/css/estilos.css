@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    position: relative;
+    min-height: 0;
+}
+.nav{
+    background-color:blanchedalmond;
+    /* display: flex; */
+    padding: 10px;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.nav a{
+    text-decoration: none;
+    color:chocolate;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    gap:10px
+}
+.libro{
+    width: 80%;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.4);
+}
+.titulo{
+    font-size: 1.5em;
+    font-weight: bold;
+    color:crimson;
+    display: flex;
+    align-items:center;
+    gap:25px;
+}
+.titulo img{
+    width: 125px;
+}
+.titulo .autor{
+    font-size: .8em;
+}
+.titulo span.autor-span{
+    text-decoration: underline;
+    font-weight: 700;
+    margin-left: 5px;
+    padding: 0px 12px 0px 5px;
+    background-color:cornflowerblue;
+    color:white;
+    font-size: 0.7em;
+}
+.titulo .precio{
+    color: green;
+    font-size: 0.6em;
+}

@@ -1,0 +1,18 @@
+{% extends 'layouts/main_layout.html' %}
+
+
+{% block content %}
+
+{% load static %}
+<h1>Autores</h1>
+
+{% for autor in autores %}
+<article class="card">
+    <a href="{% url 'autor_libros' autor.id %}">
+        <h3>{{autor.nombre}} {{autor.apellidos}}</h3>
+    </a>
+</article>
+{% endfor %}
+
+
+{% endblock %}

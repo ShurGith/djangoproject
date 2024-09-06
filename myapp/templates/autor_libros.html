@@ -1,0 +1,20 @@
+{% extends 'layouts/main_layout.html' %}
+
+
+{% block content %}
+
+{% load static %}
+<h1>{{autor}}</h1>
+
+{% for libro in libros %}
+
+<div class="card">
+    <h4>{{libro.titulo}}</h4>
+    <p>{{libro.extracto}}</p>
+    <h4>{{libro.isbn}}</h4>
+    <h4>{{libro.precio}}</h4>
+</div>
+
+{% endfor %}
+
+{% endblock %}

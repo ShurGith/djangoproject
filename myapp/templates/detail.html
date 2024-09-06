@@ -1,0 +1,17 @@
+{% extends 'layouts/main_layout.html' %}
+
+
+{% block content %}
+
+{% load static %}
+<h1>{{project}}</h1>
+
+{% for task in tasks %}
+
+<div class="card">
+    <h4>{{task.title}}</h4>
+</div>
+
+{% endfor %}
+
+{% endblock %}
